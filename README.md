@@ -34,11 +34,6 @@ ATTENTION: il faut bien mettre à jour tous les fichiers avant de pull.
 
 
 	# 2) Développement d'un projet java en équipe
-<<<<<<< HEAD
-
-
-Nous avons maintenant créé une nouvelle branche de test
-=======
 (Voir fichiers .java)
 
 	# 3) Gérer des nouvelles fonctionnalités à l’aide des branches
@@ -47,11 +42,6 @@ Lors de l'exécution de la commande 'ls', nous pouvons remarquer que le fichier 
 
 		# Exercices
 		# 3)
-<<<<<<< HEAD
-		
-	
->>>>>>> d911646c000221eaf27235a006c11bd6ace843e9
-=======
 On crée d'abord la branche AthosCoin / PortosCoin avec la commande 'git checkout -b [Nom]'
 On crée le fichier [NOM].java
 On add à la branche choisie le fichier créé avec la commande 'git add [fichier.java]
@@ -59,4 +49,3 @@ On commit avec la commande 'git commit -m "[message]"
 On retourne sur la branche "main" avec la commande 'git checkout main'
 On regarde le graphe des branches avec la commande 'git log --graph --oneline --all --decorate --topo-order'
 On fusionne les deux branches avec la commande 'git merge [Nom]'
->>>>>>> 1e39d777c621b765ef579053d81580f78d4b4210
