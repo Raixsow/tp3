@@ -1,4 +1,4 @@
-**Nom :** Kulpa Clément
+**Nom :** Anthony Flem / Clément 
 
 **Groupe :** B - B2
 
@@ -24,3 +24,7 @@ Ensuite, on synchronise les dépôts locaux et distants:
 Puis on utilise la commande 'cp -r tp2/* tp3/' pour copier les fichiers du tp2 dans le répertoire du tp3.
 
 	# 2)
+On exécute la commande 'git pull' pour récupérer les fichiers via github.
+(Nos fichiers sont bien synchronisés)
+
+	# 3)
