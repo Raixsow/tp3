@@ -21,10 +21,12 @@ public class Portefeuille {
    */
   public boolean transfertDevise (Portefeuille destination, double montantJetons)
   {
-      /**
-           FONCTION À IMPLEMENTER
-	  **/
-      return false;
+    if ( ! this.monnaie.getNom().equals( destination.monnaie.getNom() ) ) return false;
+    if ( this.montant < montantJetons                                   ) return false;
+        
+    this.montant        -= montantJetons;
+    destination.montant += montantJetons;
+    return true;
   }
 
   /**
@@ -36,10 +38,12 @@ public class Portefeuille {
    */
   public boolean achatDevise (double montantEuros)
   {
-	/**
-           FONCTION À IMPLEMENTER
-	**/
-    return false;
+    if ( montantEuros < 0 ) return false;
+
+    double valeurJeton  = this.monnaie.getValeurDeJeton();
+    double jetonAchetes = montantEuros / valeurJeton; 
+    this.montant += jetonAchetes;
+    return true;
   }
 
   /**
@@ -86,5 +90,4 @@ public class Portefeuille {
            + this.monnaie.toString()            + " = "
            + String.format("%10.1f", valeurEnEuros());
   }
-
 }
