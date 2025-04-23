@@ -1,4 +1,4 @@
-**Nom :** Anthony Flem / Clément Kulpa 
+**Nom :** Anthony Flem / Clément Kulpa / Alexis Constantin
 
 **Groupe :** B - B1
 
@@ -26,5 +26,7 @@ Puis on utilise la commande 'cp -r tp2/* tp3/' pour copier les fichiers du tp2 d
 	# 2)
 On exécute la commande 'git pull' pour récupérer les fichiers via github.
 (Nos fichiers sont bien synchronisés)
+
+ATTENTION: il faut bien mettre à jour tous les fichiers avant de pull.
 
 	# 3)
