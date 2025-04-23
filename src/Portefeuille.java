@@ -1,17 +1,15 @@
-public class Portefeuille 
-
-{
+public class Portefeuille {
     private Cryptomonnaie monnaie;
     private double montant; // Soit le nombre de jetons
     private String proprietaire;
-
+  
     public Portefeuille(Cryptomonnaie monnaie, double montant, String proprietaire)
     {
         this.monnaie      = monnaie;
         this.montant      = montant;
         this.proprietaire = proprietaire;
     }
-
+  
     /**
      * Cette fonction vous permet de transférer des devises du portefeuille actuel 
      * vers le portefeuille de destination pour le montant indiqué. Le type de devise 
@@ -23,12 +21,14 @@ public class Portefeuille
      */
     public boolean transfertDevise (Portefeuille destination, double montantJetons)
     {
-
-        if ( ! this.monnaie.getNom().equals(destination.monnaie.getNom() ) )
-            return false;
-
+      if ( ! this.monnaie.getNom().equals( destination.monnaie.getNom() ) ) return false;
+      if ( this.montant < montantJetons                                   ) return false;
+          
+      this.montant        -= montantJetons;
+      destination.montant += montantJetons;
+      return true;
     }
-
+  
     /**
      * Cette fonction vous permet d'acheter des jetons de la 
      * crypto-devise en fonction de leur valeur en euros. 
@@ -37,52 +37,60 @@ public class Portefeuille
      * @return true si le montant en euros est supérieur ou égal à 0 
      */
     public boolean achatDevise (double montantEuros)
-    
     {
-        if (montantEuros >= 0) {
-            this.montant += montantEuros * this.monnaie.getValeurDeJeton();
-            return true;
-        }
-        return false;
+      if ( montantEuros < 0 ) return false;
+  
+      double valeurJeton  = this.monnaie.getValeurDeJeton();
+      double jetonAchetes = montantEuros / valeurJeton; 
+      this.montant += jetonAchetes;
+      return true;
     }
-
+  
     /**
      * Valide si le proprietaire passé en parametre est celui
      * qui as le portefeuille
      * @param proprietaire
      * @return true si les nom du propriétaire est correct
      */
-    public boolean estProprietaire (String proprietaire){
-        return (proprietaire.equals(this.proprietaire))?true:false;
+    public boolean estProprietaire (String proprietaire)
+    {
+          return (proprietaire.equals(this.proprietaire))?true:false;
     }
 
+
+    
+  
     /**
      * 
      * @return La valeur en euros du Portefeuille. 
      * Autrement dit, le monant de jetons multiplié par la valeur des jetons. 
      */
-    public double valeurEnEuros(){
+    public double valeurEnEuros()
+    {
         return this.montant * this.monnaie.getValeurDeJeton();
     }
-
-    public String getProprietaire() {
+  
+    public String getProprietaire()
+    {
         return proprietaire;
     }
-
-    public Cryptomonnaie getMonnaie() {
+  
+    public Cryptomonnaie getMonnaie()
+    {
         return monnaie;
     }
-
-    public double getMontant() {
+  
+    public double getMontant()
+    {
         return montant;
     }
-
+  
     @Override
-    public String toString() {
+    public String toString()
+    {
         return String.format("%10s",proprietaire) + " : "
-            + String.format("%10.1f", montant)   + " x " 
-            + this.monnaie.toString()            + " = "
-            + String.format("%10.1f", valeurEnEuros());
+             + String.format("%10.1f", montant)   + " x " 
+             + this.monnaie.toString()            + " = "
+             + String.format("%10.1f", valeurEnEuros());
     }
-
-}
+  }
