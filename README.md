@@ -1,6 +1,6 @@
-**Nom :** Anthony Flem
+**Nom :** Kulpa Clément
 
-**Groupe :** B - B1
+**Groupe :** B - B2
 
 **Année :** 1ère année (2024 - 2025)
 
