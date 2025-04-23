@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 **Nom :** Anthony Flem
 
 **Groupe :** B - B1
