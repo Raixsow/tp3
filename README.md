@@ -34,6 +34,19 @@ ATTENTION: il faut bien mettre à jour tous les fichiers avant de pull.
 
 
 	# 2) Développement d'un projet java en équipe
+<<<<<<< HEAD
 
 
 Nous avons maintenant créé une nouvelle branche de test
+=======
+(Voir fichiers .java)
+
+	# 3) Gérer des nouvelles fonctionnalités à l’aide des branches
+		# 3.2) Fusionner la branche de test dans la branche principale
+Lors de l'exécution de la commande 'ls', nous pouvons remarquer que le fichier test.txt est présent sur notre branche.
+
+		# Exercices
+		# 3)
+		
+	
+>>>>>>> d911646c000221eaf27235a006c11bd6ace843e9
