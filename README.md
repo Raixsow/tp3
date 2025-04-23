@@ -34,3 +34,6 @@ ATTENTION: il faut bien mettre à jour tous les fichiers avant de pull.
 
 
 	# 2) Développement d'un projet java en équipe
+
+
+Nous avons maintenant créé une nouvelle branche de test
