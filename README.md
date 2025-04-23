@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-**Nom :** Anthony Flem / Clément 
-=======
 **Nom :** Anthony Flem / Clément Kulpa / Alexis Constantin
->>>>>>> 02cf566c295061d3ea1bd7837047dd114f22ac96
 
 **Groupe :** B - B2
 
@@ -39,3 +35,6 @@ ATTENTION: il faut bien mettre à jour tous les fichiers avant de pull.
 
 	# 2) Développement d'un projet java en équipe
 (Voir fichiers .java)
+
+
+"Nous avont maintenant crée une nouvelle branche test"
