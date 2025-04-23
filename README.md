@@ -10,6 +10,7 @@
 	# Exercices:
 
 Porthos: Clément Kulpa
+Porthos: Alexis Constantin
 Athos  : Anthony Flem
 
 	# 1) 
