@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 **Nom :** Anthony Flem / Clément 
+=======
+**Nom :** Anthony Flem / Clément Kulpa / Alexis Constantin
+>>>>>>> 02cf566c295061d3ea1bd7837047dd114f22ac96
 
 **Groupe :** B - B2
 
@@ -7,12 +11,13 @@
 **IUT Le Havre - Cours GIT**
 
 ### Compte-rendu TP3 Introduction GIT ###
-	# Exercices:
+		# Exercices:
 
 Porthos: Clément Kulpa
+Porthos: Alexis Constantin
 Athos  : Anthony Flem
 
-	# 1) 
+		# 1) 
 On utilise la suite de commande ci-dessous:
 'git add .'
 'git commit -m "Ajout des fichiers du tp2"'
@@ -23,8 +28,13 @@ Ensuite, on synchronise les dépôts locaux et distants:
 
 Puis on utilise la commande 'cp -r tp2/* tp3/' pour copier les fichiers du tp2 dans le répertoire du tp3.
 
-	# 2)
+		# 2)
 On exécute la commande 'git pull' pour récupérer les fichiers via github.
+
+ATTENTION: il faut bien mettre à jour tous les fichiers avant de pull.
+
+		# 3)
 (Nos fichiers sont bien synchronisés)
 
-	# 3)
+
+	# 2) Développement d'un projet java en équipe
