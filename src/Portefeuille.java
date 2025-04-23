@@ -27,11 +27,6 @@ public class Portefeuille
         if ( ! this.monnaie.getNom().equals(destination.monnaie.getNom() ) )
             return false;
 
-        
-
-
-
-        
     }
 
     /**
@@ -48,7 +43,7 @@ public class Portefeuille
             this.montant += montantEuros * this.monnaie.getValeurDeJeton();
             return true;
         }
-    return false;
+        return false;
     }
 
     /**
@@ -61,6 +56,7 @@ public class Portefeuille
         return (proprietaire.equals(this.proprietaire))?true:false;
     }
 
+<<<<<<< HEAD
     /**
      * 
      * @return La valeur en euros du Portefeuille. 
@@ -90,4 +86,39 @@ public class Portefeuille
             + String.format("%10.1f", valeurEnEuros());
     }
 
+=======
+  /**
+   * 
+   * @return La valeur en euros du Portefeuille. 
+   * Autrement dit, le monant de jetons multiplié par la valeur des jetons. 
+   */
+  public double valeurEnEuros()
+  {
+      return this.montant * this.monnaie.getValeurDeJeton();
+  }
+
+  public String getProprietaire()
+  {
+      return proprietaire;
+  }
+
+  public Cryptomonnaie getMonnaie()
+  {
+      return monnaie;
+  }
+
+  public double getMontant()
+  {
+      return montant;
+  }
+
+  @Override
+  public String toString()
+  {
+      return String.format("%10s",proprietaire) + " : "
+           + String.format("%10.1f", montant)   + " x " 
+           + this.monnaie.toString()            + " = "
+           + String.format("%10.1f", valeurEnEuros());
+  }
+>>>>>>> 1a563d3b84560128941520cd23ef54ecbb50f792
 }
