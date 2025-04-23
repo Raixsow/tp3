@@ -42,5 +42,10 @@ Lors de l'exécution de la commande 'ls', nous pouvons remarquer que le fichier 
 
 		# Exercices
 		# 3)
-		
-	
+On crée d'abord la branche AthosCoin / PortosCoin avec la commande 'git checkout -b [Nom]'
+On crée le fichier [NOM].java
+On add à la branche choisie le fichier créé avec la commande 'git add [fichier.java]
+On commit avec la commande 'git commit -m "[message]"
+On retourne sur la branche "main" avec la commande 'git checkout main'
+On regarde le graphe des branches avec la commande 'git log --graph --oneline --all --decorate --topo-order'
+On fusionne les deux branches avec la commande 'git merge [Nom]'
